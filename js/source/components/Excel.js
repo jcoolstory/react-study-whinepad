@@ -145,7 +145,7 @@ class Excel extends Component {
 
     _renderDeleteDialog() {
         const first = this.state.data[this.state.dialog.idx];
-        const nameguess = first[Object.keyss(first)[0]];
+        const nameguess = first[Object.keys(first)[0]];
         return (
             <Dialog 
                 modal={true}
@@ -170,7 +170,7 @@ class Excel extends Component {
             <Form 
                 ref="form"
                 fields={this.props.schema}
-                initialData={this.state.data[this.staet.dialog.idx]}
+                initialData={this.state.data[this.state.dialog.idx]}
                 readonly={readonly} />                
 
             </Dialog>

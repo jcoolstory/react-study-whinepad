@@ -6,7 +6,7 @@ class Form extends Component{
     getData() {
         let data = {};
         this.props.fields.forEach(field => 
-            data[filed.id] = this.refs[filed.id].getValue()
+            data[field.id] = this.refs[field.id].getValue()
             );
         return data;
     }
@@ -16,7 +16,7 @@ class Form extends Component{
                 
                 this.props.fields.map(field => {
                 const prefilled = this.props.initialData && 
-                    this.props.initailData[filed.id];
+                    this.props.initialData[field.id];
             if (!this.props.readonly){
                 return (
                     <div className="FormRow" key={field.id}>
@@ -41,7 +41,7 @@ class Form extends Component{
                     </div>
 
             );
-            }, this)}></form>
+            }, this)}</form>
         );
     }
 }

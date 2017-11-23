@@ -2,7 +2,7 @@ import React, {Component, PropTypes } from 'react';
 
 class Suggest extends Component {
     getValue() {
-        return this.refs.lowlevelinpput.value;
+        return this.refs.lowlevelinput.value;
     }
 
     render () {
